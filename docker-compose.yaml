@@ -1,0 +1,9 @@
+services:
+  unstructured-api:
+    image: pipeline-family-general-dev:latest
+    restart: always
+    environment:
+      - TZ=Asia/Shanghai
+    ports:
+      - "8070:8000"
+    # tty: true # 重要参数，必须加
