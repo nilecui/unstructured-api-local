@@ -13,7 +13,7 @@ logger = logging.getLogger("unstructured_api")
 app = FastAPI(
     title="Unstructured Pipeline API",
     summary="Partition documents with the Unstructured library",
-    version="0.0.73",
+    version="0.0.74",
     docs_url="/general/docs",
     openapi_url="/general/openapi.json",
     servers=[
@@ -23,7 +23,7 @@ app = FastAPI(
             "x-speakeasy-server-id": "prod",
         },
         {
-            "url": "http://192.168.12.180:8070",
+            "url": "http://0.0.74.180:8070",
             "description": "Development server",
             "x-speakeasy-server-id": "local",
         },
